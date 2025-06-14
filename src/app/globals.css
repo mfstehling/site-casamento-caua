@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff;
+  --background: #fcfaf3;
   --foreground: #171717;
 }
 
@@ -39,4 +39,7 @@ a {
   html {
     color-scheme: dark;
   }
+}
+html {
+  scroll-behavior: smooth;
 }
