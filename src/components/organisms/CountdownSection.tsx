@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { TimeBox } from "../molecules/TimeBox";
 import { Patrick_Hand } from "next/font/google";
@@ -42,6 +42,7 @@ export const CountdownSection = ({ id }: { id: string }) => {
     }, 1000);
 
     return () => clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const comments = [

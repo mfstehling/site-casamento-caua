@@ -1,10 +1,10 @@
 "use client";
 
-import { Box, Button, Center, Text, VStack } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
+import { Center, Text, VStack } from "@chakra-ui/react";
+// import { useRouter } from "next/navigation";
 
 export default function Presentes() {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <Center w="100%" h="100vh" flexDirection="column" bg="#FCFAF3">
