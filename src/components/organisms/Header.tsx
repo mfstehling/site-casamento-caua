@@ -32,9 +32,9 @@ export const Header = () => {
 
       {/* Menu */}
       <HStack spacing={8}>
-        <ChakraLink href="#home">
-          <Button variant="link">Home</Button>
-        </ChakraLink>
+        <Button variant="link" onClick={() => router.push("/")}>
+          Home
+        </Button>
         <ChakraLink href="#contagem">
           <Button variant="link">Contagem Regressiva</Button>
         </ChakraLink>
