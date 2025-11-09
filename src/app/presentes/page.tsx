@@ -3,7 +3,6 @@
 import {
   Box,
   Button,
-  Center,
   Grid,
   Image,
   Text,
@@ -30,91 +29,105 @@ export default function Presentes() {
     {
       id: 1,
       nome: "Jogo de Panelas Antiaderente",
-      preco: 299.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_942838-MLB75526859398_042024-F.webp",
+      preco: 299.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_942838-MLB75526859398_042024-F.webp",
       categoria: "Cozinha",
     },
     {
       id: 2,
       nome: "Jogo de Cama Casal",
-      preco: 149.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_949119-MLB75098721890_032024-F.webp",
+      preco: 149.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_949119-MLB75098721890_032024-F.webp",
       categoria: "Quarto",
     },
     {
       id: 3,
       nome: "Cafeteira Elétrica",
-      preco: 189.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_625234-MLB69812821766_062023-F.webp",
+      preco: 189.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_625234-MLB69812821766_062023-F.webp",
       categoria: "Cozinha",
     },
     {
       id: 4,
       nome: "Aparelho de Jantar 20 Peças",
-      preco: 249.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_774736-MLB74688775866_022024-F.webp",
+      preco: 249.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_774736-MLB74688775866_022024-F.webp",
       categoria: "Cozinha",
     },
     {
       id: 5,
       nome: "Liquidificador",
-      preco: 159.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_895133-MLB74476913156_022024-F.webp",
+      preco: 159.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_895133-MLB74476913156_022024-F.webp",
       categoria: "Cozinha",
     },
     {
       id: 6,
       nome: "Ferro de Passar a Vapor",
-      preco: 129.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_777384-MLB74426664893_022024-F.webp",
+      preco: 129.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_777384-MLB74426664893_022024-F.webp",
       categoria: "Lavanderia",
     },
     {
       id: 7,
       nome: "Conjunto de Toalhas",
-      preco: 99.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_928957-MLB74866374039_032024-F.webp",
+      preco: 99.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_928957-MLB74866374039_032024-F.webp",
       categoria: "Banho",
     },
     {
       id: 8,
       nome: "Aspirador de Pó",
-      preco: 199.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_945769-MLB74854729875_032024-F.webp",
+      preco: 199.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_945769-MLB74854729875_032024-F.webp",
       categoria: "Limpeza",
     },
     {
       id: 9,
       nome: "Micro-ondas",
-      preco: 449.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_647656-MLB74795885766_032024-F.webp",
+      preco: 449.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_647656-MLB74795885766_032024-F.webp",
       categoria: "Cozinha",
     },
     {
       id: 10,
       nome: "Jogo de Copos",
-      preco: 79.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_687824-MLB71347901528_092023-F.webp",
+      preco: 79.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_687824-MLB71347901528_092023-F.webp",
       categoria: "Cozinha",
     },
     {
       id: 11,
       nome: "Ventilador de Mesa",
-      preco: 139.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_826665-MLB74845664629_032024-F.webp",
+      preco: 139.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_826665-MLB74845664629_032024-F.webp",
       categoria: "Conforto",
     },
     {
       id: 12,
       nome: "Conjunto de Facas",
-      preco: 119.90,
-      imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_862838-MLB74654935154_022024-F.webp",
+      preco: 119.9,
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_2X_862838-MLB74654935154_022024-F.webp",
       categoria: "Cozinha",
     },
   ];
 
   const handleProdutoClick = (produto: Produto) => {
-    router.push(`/checkout?produto=${encodeURIComponent(JSON.stringify(produto))}`);
+    router.push(
+      `/checkout?produto=${encodeURIComponent(JSON.stringify(produto))}`
+    );
   };
 
   return (
