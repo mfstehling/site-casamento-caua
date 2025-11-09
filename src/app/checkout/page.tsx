@@ -13,7 +13,6 @@ import {
   Input,
   FormControl,
   FormLabel,
-  Icon,
 } from "@chakra-ui/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
@@ -112,7 +111,7 @@ function CheckoutContent() {
       } else {
         throw new Error("Erro ao enviar notificação");
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Erro ao enviar notificação",
         description: "Por favor, tente novamente mais tarde.",

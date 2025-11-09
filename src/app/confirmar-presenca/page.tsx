@@ -97,7 +97,7 @@ export default function ConfirmarPresenca() {
       } else {
         throw new Error("Erro ao enviar confirmação");
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Erro ao confirmar presença",
         description: "Por favor, tente novamente mais tarde.",
